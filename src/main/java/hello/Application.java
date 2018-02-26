@@ -7,17 +7,18 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application implements CommandLineRunner {
+public class Application {
 
-    @Autowired
-    private CustomerRepository repository;
+
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
-    @Override
+  /*  @Override
     public void run(String... args) throws Exception {
+
+
 
         repository.deleteAll();
 
@@ -44,6 +45,6 @@ public class Application implements CommandLineRunner {
             System.out.println(customer);
         }
 
-    }
+    }*/
 
 }
